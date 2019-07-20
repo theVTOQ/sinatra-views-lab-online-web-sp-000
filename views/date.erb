@@ -3,6 +3,6 @@
   <body>
     <h1>Today</h1>
     <% date = DateTime.new %>
-    <p>The date is <%="#{date.month} #{date.day}, #{date.year}" %></p>
+    <p>The date is <%=DateTime.today.strftime("%A, %B %d, %Y")%></p>
   </body>
 </html>
